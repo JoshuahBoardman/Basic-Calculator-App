@@ -1,0 +1,97 @@
+/* Global styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lusitana', serif;
+    background-color: #292238;
+    color: #fff;
+    
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e8b546;
+    margin-bottom: 0rem;
+}
+
+/* Layout */
+
+.display {
+    font-size: 2rem;
+    background-color: #171320;
+    border: 0;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding: .75rem .5rem;
+    margin-bottom: 1.25rem;
+}
+
+.calculator-buttons {
+    background-color: #171320;
+    border-radius: .75rem;
+    display: grid;
+    grid-template-areas: 
+    "btn-7 btn-8 btn-9 btn-back"
+    "btn-4 btn-5 btn-6 btn-plus"
+    "btn-1 btn-2 btn-3 btn-minus"
+    "btn-decimal btn-0 btn-slash btn-times"
+    "btn-clear btn-clear btn-equals btn-equals";
+    gap: 1rem;
+    width: 100%;
+    padding: 1.25rem;
+}
+
+/* Components */
+
+.calculator-buttons .btn { 
+    font-size: 1.5rem;
+    background-color: #dbb35c;
+    color: #191721;
+    border: 0;
+    border-radius: .75rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition-duration: .1s;
+}
+
+.calculator-buttons .btn:hover {
+    background-color: #e4c686;
+    transition-duration: .1s;
+}
+
+.calculator-buttons .btn-clear {
+    grid-area: btn-clear;
+}
+
+.calculator-buttons .btn-equals {
+    grid-area: btn-equals;
+}
+

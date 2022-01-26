@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <title>Basic Calculator App</title>
@@ -12,26 +16,36 @@
     <div class="content-wrapper">
         <div class="calculator">
             <h1 class="title">Calculator</h1>
-            <div class="display"></div>
+            <div class="display">721.54</div>
             <div class="calculator-buttons">
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">CE</button>
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">+</button>
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">-</button>
-                <button class="btn">.</button>
-                <button class="btn">0</button>
-                <button class="btn">/</button>
-                <button class="btn">*</button>
-                <button class="btn">C</button>
-                <button class="btn">=</button>
+                <button class="btn btn-7">7</button>
+                <button class="btn btn-8">8</button>
+                <button class="btn btn-9">9</button>
+                <button class="btn btn-back">
+                    <i class="fas fa-backspace"></i>
+                </button>
+                <button class="btn btn-4">4</button>
+                <button class="btn btn-5">5</button>
+                <button class="btn btn-6">6</button>
+                <button class="btn btn-plus">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button class="btn btn-1">1</button>
+                <button class="btn btn-2">2</button>
+                <button class="btn btn-3">3</button>
+                <button class="btn btn-minus">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button class="btn btn-decimal">.</button>
+                <button class="btn btn-0">0</button>
+                <button class="btn btn-slash">/</button>
+                <button class="btn btn-times">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="btn btn-clear">Clear</button>
+                <button class="btn btn-equals">
+                    <i class="fas fa-equals"></i>
+                </button>
             </div>
         </div>
     </div>
