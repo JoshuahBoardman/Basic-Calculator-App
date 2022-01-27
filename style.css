@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 350px;
 }
 
 /* Typography */
@@ -42,16 +43,28 @@ body {
 /* Layout */
 
 .display {
-    font-size: 2rem;
     background-color: #171320;
     border: 0;
     border-radius: .75rem;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
     width: 100%;
-    padding: 1rem;
+    padding-right: 1rem;
+    padding: .5rem 1rem;
     margin-bottom: 1.25rem;
+    min-height: 4rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .previous-number {
+    font-size: 1.5rem;
+}
+
+.display .current-number {
+    font-size: 2.5rem;
 }
 
 .calculator-buttons {
@@ -62,9 +75,11 @@ body {
     "btn-7 btn-8 btn-9 btn-back"
     "btn-4 btn-5 btn-6 btn-plus"
     "btn-1 btn-2 btn-3 btn-minus"
-    "btn-decimal btn-0 btn-slash btn-times"
+    "btn-decimal btn-0 btn-devide btn-times"
     "btn-clear btn-clear btn-equals btn-equals";
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 1.25rem;
 }
@@ -85,6 +100,13 @@ body {
 .calculator-buttons .btn:hover {
     background-color: #e4c686;
     transition-duration: .1s;
+}
+
+.calculator-buttons .btn-plus,
+.calculator-buttons .btn-minus,
+.calculator-buttons .btn-times,
+.calculator-buttons .btn-divide {
+    font-size: 2rem;
 }
 
 .calculator-buttons .btn-clear {
